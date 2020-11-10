@@ -28,15 +28,17 @@
       "disablePlugins": [],
       "outputPath": ""
     },
+    "enableEngineNative": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
     "packNpmManually": false,
-    "packNpmRelationList": []
+    "packNpmRelationList": [],
+    "minifyWXSS": true
   },
   "compileType": "miniprogram",
   "libVersion": "2.13.1",
-  "appid": "wx875157de08e1992b",
+  "appid": "wx0f193f73fc88951d",
   "projectname": "sustech-online",
   "debugOptions": {
     "hidedInDevtools": []
@@ -47,27 +49,21 @@
   "simulatorPluginLibVersion": {},
   "condition": {
     "search": {
-      "current": -1,
       "list": []
     },
     "conversation": {
-      "current": -1,
       "list": []
     },
     "game": {
-      "current": -1,
       "list": []
     },
     "plugin": {
-      "current": -1,
       "list": []
     },
     "gamePlugin": {
-      "current": -1,
       "list": []
     },
     "miniprogram": {
-      "current": -1,
       "list": []
     }
   }
