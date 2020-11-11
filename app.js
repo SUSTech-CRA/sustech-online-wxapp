@@ -33,7 +33,18 @@ App({
       }
     })
   },
+  onShow: function (options) {
+    // wx.showModal({
+    //   title: JSON.stringify(options),
+    // })
+    if (options.query.url) {
+      this.globalData.entry_url = unescape(options.query.url)
+    } else {
+      this.globalData.entry_url = "https://sustech.online"
+    }
+  },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    entry_url: null
   }
 })
