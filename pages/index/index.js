@@ -62,15 +62,9 @@ Page({
   onShareAppMessage(options) {
     // console.log("share")
     // console.log(options.webViewUrl)
-    var tmp_query = "url=" + escape(options.webViewUrl)
-    var rt = {
-      path: "pages/index/index?" + tmp_query,
-      // query: "url=" + escape(options.webViewUrl)
+    var encode_url = "url=" + encodeURIComponent(options.webViewUrl)
+    return {
+      path: "pages/index/index?" + encode_url,
     }
-    // console.log(rt)
-    // wx.showModal({
-    //   title: JSON.stringify(rt)
-    // })
-    return rt
   }
 })
