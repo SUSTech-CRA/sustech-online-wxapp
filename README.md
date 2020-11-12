@@ -1,6 +1,13 @@
-## TODO
+# 南科手册 - 小程序
 
-1. 重新载入的逻辑测试
-2. ~~场景值：https://developers.weixin.qq.com/miniprogram/dev/reference/scene-list.html~~ 不认为是bug
-3. ~~完善扫码进入~~
-4. ~~encodeURIComponent() decodeURIComponent() 替换 escape()~~
+Online manual for SUSTecher.
+
+**微信小程序二维码**
+
+![qrcode](./qr-code.jpg)
+
+## 帮助我们完善
+
+主项目托管在 [SUSTC/sustech-online-ng](https://github.com/sustc/sustech-online-ng)
+
+小程序托管在 [SUSTC/sustech-online-wxapp](https://github.com/SUSTC/sustech-online-wxapp)
