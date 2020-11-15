@@ -62,9 +62,22 @@ Page({
   onShareAppMessage(options) {
     // console.log("share")
     // console.log(options.webViewUrl)
+    let shareTitle = this.data.shareTitle
     var encode_url = "url=" + encodeURIComponent(options.webViewUrl)
     return {
+      title: shareTitle,
       path: "pages/index/index?" + encode_url,
     }
+  },
+  getMSG(e) {
+    // console.log('============这里返回postMessage对应的对象============')
+    // console.log(e)
+    // wx.showModal({
+    //   title: JSON.stringify(e.detail.data),
+    // })
+    let last_item = e.detail.data.pop()
+    this.setData({
+      shareTitle: last_item.shareTitle
+    })
   }
 })
