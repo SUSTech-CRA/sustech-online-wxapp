@@ -20,8 +20,10 @@ Page({
       url: '/pages/index/container',
     })
     if (app.globalData.entry_url) {
+      let tmp_url = app.globalData.entry_url
+      app.globalData.entry_url = null
       wx.redirectTo({
-        url: '/pages/index/container?url=' + app.globalData.entry_url,
+        url: '/pages/index/container?url=' + tmp_url,
       })
     } else {
       wx.redirectTo({
