@@ -39,11 +39,10 @@ App({
     // })
     if (options.query.q) {
       this.globalData.entry_url = decodeURIComponent(options.query.q)
-    }
-    else if (options.query.url) {
+    } else if (options.query.url) {
       this.globalData.entry_url = decodeURIComponent(options.query.url)
     } else {
-      this.globalData.entry_url = "https://sustech.online"
+      this.globalData.entry_url = null
     }
   },
   globalData: {

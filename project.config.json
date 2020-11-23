@@ -4,7 +4,7 @@
     "ignore": []
   },
   "setting": {
-    "urlCheck": true,
+    "urlCheck": false,
     "es6": true,
     "enhance": false,
     "postcss": true,
@@ -58,8 +58,7 @@
       "list": []
     },
     "miniprogram": {
-      "list": [
-        {
+      "list": [{
           "name": "分享",
           "pathName": "pages/index/index",
           "query": "url=https%3a%2f%2fsustech.online%2ftransport%2fworkday.html",
@@ -70,6 +69,12 @@
           "pathName": "pages/index/index",
           "query": "q=https%3a%2f%2fsustech.online%2ftransport%2f",
           "scene": 1011
+        },
+        {
+          "name": "pages/index/container",
+          "pathName": "pages/index/container",
+          "query": "url=https%3a%2f%2fsustech.online%2ftransport%2fworkday.html",
+          "scene": null
         }
       ]
     }
