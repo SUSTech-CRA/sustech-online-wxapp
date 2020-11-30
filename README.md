@@ -6,6 +6,10 @@ Online manual for SUSTecher.
 
 ![qrcode](./qr-code.jpg)
 
+**截图**
+
+<img src="Screenshot.jpg" width="400px" />
+
 ## 帮助我们完善
 
 主项目托管在 [SUSTC/sustech-online-ng](https://github.com/sustc/sustech-online-ng)
