@@ -8,7 +8,7 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    url: "about:blank"
+    url: "https://sustech.online"
   },
   //事件处理函数
   bindViewTap: function () {
@@ -17,6 +17,9 @@ Page({
     })
   },
   onLoad: function (query) {
+    // wx.showModal({
+    //   title: "container " + JSON.stringify(query),
+    // })
     if (query.url) {
       // console.log("onload")
       // console.log(app.globalData.entry_url)

@@ -16,9 +16,6 @@ Page({
     })
   },
   onLoad: function () {
-    wx.redirectTo({
-      url: '/pages/index/container',
-    })
     if (app.globalData.entry_url) {
       let tmp_url = app.globalData.entry_url
       app.globalData.entry_url = null
