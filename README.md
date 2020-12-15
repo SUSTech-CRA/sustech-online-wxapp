@@ -26,3 +26,4 @@ Online manual for SUSTecher.
 ## 提示
 * 项目依赖 web-view，如需发布仅支持企业、个体户注册的小程序号，不支持个人号。
 * 业务域名需要验证，仅能访问在白名单中的域名
+* web-view 承载的网站最好引用 [wx_helper.js](https://github.com/SUSTC/sustech-online-ng/blob/master/docs/.vuepress/public/wx_helper.js) 脚本和 [JS-SDK](https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html) -- [jweixin-1.6.0.js](http://res.wx.qq.com/open/js/jweixin-1.6.0.js)，否则分享出的卡片没有承载网站的标题（默认标题为小程序的名字）
