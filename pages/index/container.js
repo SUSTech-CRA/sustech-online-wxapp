@@ -69,8 +69,16 @@ Page({
   onShareAppMessage(options) {
     // console.log("share")
     // console.log(options.webViewUrl)
-    let shareTitle = this.data.shareTitle
-    var encode_url = "url=" + encodeURIComponent(options.webViewUrl)
+    let shareTitle = this.data.shareTitle;
+    let shareURL = this.data.shareURL;
+    if (options.webViewUrl) {
+      var encode_url = "url=" + encodeURIComponent(options.webViewUrl)
+    } else {
+      var encode_url = "url=" + encodeURIComponent(shareURL)
+    }
+    // wx.showModal({
+    //   title: JSON.stringify(encode_url),
+    // })
     return {
       title: shareTitle,
       path: "pages/index/index?" + encode_url,
@@ -84,7 +92,8 @@ Page({
     // })
     let last_item = e.detail.data.pop()
     this.setData({
-      shareTitle: last_item.shareTitle
+      shareTitle: last_item.shareTitle,
+      shareURL: last_item.shareURL
     })
   }
 })
