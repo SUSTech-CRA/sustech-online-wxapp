@@ -29,16 +29,18 @@
       "outputPath": ""
     },
     "enableEngineNative": false,
+    "bundle": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [],
     "minifyWXSS": true
   },
   "compileType": "miniprogram",
   "libVersion": "2.13.1",
-  "appid": "wx0f193f73fc88951d",
+  "appid": "wx1aed852b6f3f64db",
   "projectname": "sustech-online",
   "debugOptions": {
     "hidedInDevtools": []
@@ -58,7 +60,8 @@
       "list": []
     },
     "miniprogram": {
-      "list": [{
+      "list": [
+        {
           "name": "分享",
           "pathName": "pages/index/index",
           "query": "url=https%3a%2f%2fsustech.online%2ftransport%2fworkday.html",
