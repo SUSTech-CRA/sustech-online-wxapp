@@ -8,7 +8,7 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    url: "https://sustech.online"
+    url: "https://sustech.online/"
   },
   //事件处理函数
   bindViewTap: function () {
@@ -28,7 +28,7 @@ Page({
       })
     } else {
       this.setData({
-        url: "https://sustech.online"
+        url: "https://sustech.online/"
       })
     }
     //   if (app.globalData.userInfo) {
@@ -91,9 +91,11 @@ Page({
     //   title: JSON.stringify(e.detail.data),
     // })
     let last_item = e.detail.data.pop()
-    this.setData({
-      shareTitle: last_item.shareTitle,
-      shareURL: last_item.shareURL
-    })
+    if (last_item.msgType == "heartbeat") {
+      this.setData({
+        shareTitle: last_item.shareTitle,
+        shareURL: last_item.shareURL
+      });
+    }
   }
 })

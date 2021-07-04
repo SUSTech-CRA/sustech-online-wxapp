@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/index/container"
+    "pages/index/container",
+    "pages/index/redirect"
   ],
   "window": {
     "backgroundTextStyle": "dark",

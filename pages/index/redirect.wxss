@@ -1,0 +1,35 @@
+/* pages/index/redirect.wxss */
+
+.container {
+  margin-top: 5pt;
+}
+
+.title {
+  font-size: 24pt;
+}
+
+.tbody {
+  font-size: 16pt;
+  margin-left: 20pt;
+  margin-right: 20pt;
+}
+
+.turl {
+  font-size: 12pt;
+  margin-bottom: 10pt;
+  margin-left: 20pt;
+  margin-right: 20pt;
+  word-break: break-all;
+}
+
+.bt_group {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20pt;
+  margin-right: 20pt;
+}
+
+.my_bt {
+  font-size: 16pt;
+  width: 30px;
+}
