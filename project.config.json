@@ -73,9 +73,9 @@
           "scene": 1011
         },
         {
-          "name": "pages/index/container",
+          "name": "小程序内部调用，url无需encode",
           "pathName": "pages/index/container",
-          "query": "url=https%3a%2f%2fsustech.online%2ftransport%2fworkday.html",
+          "query": "url=https://sustech.online/contact/",
           "scene": null
         }
       ]
