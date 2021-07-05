@@ -61,11 +61,10 @@ Page({
   },
 
   /**
-   * 用户点击右上角分享
+   * 用户点击右上角分享（禁用）
    */
-  onShareAppMessage: function () {
-
-  },
+  // onShareAppMessage: function () {
+  // },
   gobackCallback(e) {
     wx.navigateBack({
       delta: 1,
