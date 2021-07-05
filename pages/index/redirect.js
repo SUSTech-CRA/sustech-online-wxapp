@@ -35,7 +35,12 @@ Page({
               filePath: Path, //要打开的文件路径
               success: function (res) {
                 console.log('打开文件成功');
-              }
+              },
+              complete: function (res) {
+                wx.navigateBack({
+                  delta: 1,
+                })
+              },
             })
           }
         },
