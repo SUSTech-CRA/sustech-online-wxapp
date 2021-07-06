@@ -4,14 +4,12 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: {
-
-  },
+  data: {},
 
   set_style(show_filemsg, show_copymsg) {
     this.setData({
-      style_file: show_filemsg ? 'block' : 'none',
-      style_copy: show_copymsg ? 'block' : 'none',
+      style_file: show_filemsg,
+      style_copy: show_copymsg,
     })
   },
   /**

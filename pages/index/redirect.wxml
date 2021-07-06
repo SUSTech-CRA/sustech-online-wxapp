@@ -5,13 +5,13 @@
     <text>提示</text>
   </view>
 
-  <view id='file-msg' style="display: {{style_file}};">
+  <view wx:if="{{style_file}}">
     <view class="tbody">
       <text>加载文件中...</text>
     </view>
   </view>
 
-  <view id='copy-msg' style="display: {{style_copy}};">
+  <view wx:if="{{style_copy}}">
     <view class="tbody">
       <text>因为小程序规定不能打开外部链接，所以请将链接复制并粘贴到浏览器中打开。</text>
     </view>
@@ -20,8 +20,8 @@
     </view>
 
     <view class="bt_group">
-      <button type="default" bindtap="gobackCallback" class="my_bt">返回原文</button>
-      <button type="primary" bindtap="copyCallback" class="my_bt">复制网址</button>
+      <button type="default" style="width:134px" bindtap="gobackCallback" class="my_bt">返回原文</button>
+      <button type="primary" style="width:134px" bindtap="copyCallback" class="my_bt">复制网址</button>
     </view>
   </view>
 
