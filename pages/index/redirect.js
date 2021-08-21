@@ -13,6 +13,33 @@ Page({
     })
   },
   /**
+   * Format bytes as human-readable text.
+   * 
+   * @param bytes Number of bytes.
+   * @param si True to use metric (SI) units, aka powers of 1000. False to use 
+   *           binary (IEC), aka powers of 1024.
+   * @param dp Number of decimal places to display.
+   * 
+   * @return Formatted string.
+   */
+  humanFileSize(bytes, si = false, dp = 1) {
+    const thresh = si ? 1000 : 1024;
+    if (Math.abs(bytes) < thresh) {
+      return bytes + ' B';
+    }
+    const units = si ?
+      ['kB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'] :
+      ['KiB', 'MiB', 'GiB', 'TiB', 'PiB', 'EiB', 'ZiB', 'YiB'];
+    let u = -1;
+    const r = 10 ** dp;
+    do {
+      bytes /= thresh;
+      ++u;
+    } while (Math.round(Math.abs(bytes) * r) / r >= thresh && u < units.length - 1);
+    return bytes.toFixed(dp) + ' ' + units[u];
+  },
+
+  /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
@@ -22,7 +49,8 @@ Page({
     if (handleFile === 'true') {
       let file_ext = options.ext;
       this.set_style(true, false);
-      wx.downloadFile({
+      // 下载监听进度
+      const downloadTask = wx.downloadFile({
         url: the_url, //要预览的 PDF 的地址
         success: function (res) {
           console.log(res);
@@ -50,6 +78,17 @@ Page({
           })
         }
       })
+      downloadTask.onProgressUpdate((res) => {
+        console.log('下载进度', res.progress)
+        // console.log('已经下载的数据长度', res.totalBytesWritten)
+        console.log('已经下载的数据长度', this.humanFileSize(res.totalBytesWritten, true))
+        // console.log('预期需要下载的数据总长度', res.totalBytesExpectedToWrite)
+        console.log('预期需要下载的数据总长度', this.humanFileSize(res.totalBytesExpectedToWrite, true))
+        this.setData({
+          file_size: this.humanFileSize(res.totalBytesExpectedToWrite, true),
+          progress: res.progress
+        });
+      })
     } else {
       this.set_style(false, true);
       this.setData({
@@ -68,7 +107,7 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {},
+  onShow: function () { },
 
   /**
    * 生命周期函数--监听页面隐藏

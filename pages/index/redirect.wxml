@@ -7,7 +7,10 @@
 
   <view wx:if="{{style_file}}">
     <view class="tbody">
-      <text>加载文件中...</text>
+      <text>加载文件中...({{file_size}})</text>
+    </view>
+    <view class="progress-box">
+      <progress percent="{{progress}}" show-info stroke-width="3"/>
     </view>
   </view>
 
