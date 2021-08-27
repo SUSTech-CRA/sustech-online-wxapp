@@ -38,8 +38,10 @@ App({
     //   title: JSON.stringify(options),
     // })
     if (options.query.q) {
+      // 普通二维码扫描
       this.globalData.entry_url = decodeURIComponent(options.query.q)
     } else if (options.query.url) {
+      // 参数跳转：包括分享卡片
       this.globalData.entry_url = decodeURIComponent(options.query.url)
     } else {
       this.globalData.entry_url = null

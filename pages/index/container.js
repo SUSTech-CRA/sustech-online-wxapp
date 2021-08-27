@@ -73,18 +73,19 @@ Page({
     // console.log(options.webViewUrl)
     let shareTitle = this.data.shareTitle;
     let shareURL = this.data.shareURL;
+    let args = encodeURIComponent('?utm_source=wx&utm_medium=share_card');
     if (options.webViewUrl) {
-      var encode_url = "url=" + encodeURIComponent(options.webViewUrl)
+      var encode_url = "url=" + encodeURIComponent(options.webViewUrl) + args
     } else {
-      var encode_url = "url=" + encodeURIComponent(shareURL)
+      var encode_url = "url=" + encodeURIComponent(shareURL) + args
     }
+    console.log("分享链接: ", encode_url);
     // wx.showModal({
     //   title: JSON.stringify(encode_url),
     // })
-    let args = encodeURIComponent('?utm_source=wx&utm_medium=share_card');
     return {
       title: shareTitle,
-      path: "pages/index/index?" + encode_url + args,
+      path: "pages/index/index?" + encode_url,
     }
   },
   getMSG(e) {
