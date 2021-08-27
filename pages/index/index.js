@@ -22,14 +22,16 @@ Page({
     //   url: '/pages/index/redirect?outURL='+tmp_url,
     // })
     if (app.globalData.entry_url) {
-      let tmp_url = app.globalData.entry_url
-      app.globalData.entry_url = null
+      let tmp_url = app.globalData.entry_url;
+      app.globalData.entry_url = null;
+      console.log("获取输入url: ", tmp_url);
       wx.redirectTo({
         url: '/pages/index/container?url=' + tmp_url,
       })
     } else {
+      console.log("使用默认主页", app.globalData.DEFAULT_HOME_URL);
       wx.redirectTo({
-        url: '/pages/index/container?url=' + "https://sustech.online/?utm_source=wx&utm_medium=miniapp",
+        url: '/pages/index/container?url=' + encodeURIComponent(app.globalData.DEFAULT_HOME_URL)
       })
     }
   }
