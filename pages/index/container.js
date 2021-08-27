@@ -8,7 +8,7 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    url: "https://sustech.online/"
+    url: "https://sustech.online/?utm_source=wx&utm_medium=miniapp"
   },
   //事件处理函数
   bindViewTap: function () {
@@ -28,7 +28,7 @@ Page({
       })
     } else {
       this.setData({
-        url: "https://sustech.online/"
+        url: "https://sustech.online/?utm_source=wx&utm_medium=miniapp"
       })
     }
     //   if (app.globalData.userInfo) {
@@ -79,9 +79,10 @@ Page({
     // wx.showModal({
     //   title: JSON.stringify(encode_url),
     // })
+    let args = encodeURIComponent('?utm_source=wx&utm_medium=share_card');
     return {
       title: shareTitle,
-      path: "pages/index/index?" + encode_url,
+      path: "pages/index/index?" + encode_url + args,
     }
   },
   getMSG(e) {

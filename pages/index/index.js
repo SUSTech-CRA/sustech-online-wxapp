@@ -29,7 +29,7 @@ Page({
       })
     } else {
       wx.redirectTo({
-        url: '/pages/index/container?url=' + "https://sustech.online/",
+        url: '/pages/index/container?url=' + "https://sustech.online/?utm_source=wx&utm_medium=miniapp",
       })
     }
   }
