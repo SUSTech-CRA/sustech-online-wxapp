@@ -1,0 +1,42 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "卡片分享",
+          "pathName": "pages/index/index",
+          "query": "url=https%3A%2F%2Fsustech.online%2Ftransport%2Fworkday.html%3Futm_source%3Dwx%26utm_medium%3Dshare_card",
+          "scene": 1007
+        },
+        {
+          "name": "扫码",
+          "pathName": "pages/index/index",
+          "query": "q=https%3a%2f%2fsustech.online%2ftransport%2f",
+          "scene": 1011
+        },
+        {
+          "name": "小程序内部调用，url无需encode",
+          "pathName": "pages/index/container",
+          "query": "url=https://sustech.online/contact/",
+          "scene": null
+        },
+        {
+          "name": "测试文件下载页面",
+          "pathName": "pages/index/redirect",
+          "query": "outURL=https%3A%2F%2Fmirrors.sustech.edu.cn%2Fsite%2Fsustech-online%2Fdocuments%2Ffreshman-handbook%2F2021.pdf&handleFile=true&ext=pdf",
+          "scene": null
+        }
+      ]
+    }
+  }
+}
