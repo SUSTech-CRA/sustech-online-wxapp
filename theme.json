@@ -1,10 +1,16 @@
 {
   "light": {
     "navBackgroundColor": "#ffffff",
-    "navTextStyle": "black"
+    "navTextStyle": "black",
+    "fontColor": "#181818",
+    "iconPathHome": "image/icon_home_light.png",
+    "iconPathBus": "image/icon_bus_light.png"
   },
   "dark": {
     "navBackgroundColor": "#25272a",
-    "navTextStyle": "white"
+    "navTextStyle": "white",
+    "fontColor": "#c5c5c5",
+    "iconPathHome": "image/icon_home_dark.png",
+    "iconPathBus": "image/icon_bus_dark.png"
   }
 }

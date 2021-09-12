@@ -7,20 +7,20 @@
   ],
   "tabBar": {
     "custom": false,
-    "color": "#7A7E83",
+    "color": "@fontColor",
     "selectedColor": "#3cc51f",
     "borderStyle": "black",
-    "backgroundColor": "#ffffff",
+    "backgroundColor": "@navBackgroundColor",
     "list": [
       {
         "pagePath": "pages/index/container",
-        "iconPath": "image/icon_home.png",
+        "iconPath": "@iconPathHome",
         "selectedIconPath": "image/icon_home_HL.png",
         "text": "手册"
       },
       {
         "pagePath": "pages/bus/index",
-        "iconPath": "image/icon_bus.png",
+        "iconPath": "@iconPathBus",
         "selectedIconPath": "image/icon_bus_HL.png",
         "text": "巴士"
       }
