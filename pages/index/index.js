@@ -25,12 +25,12 @@ Page({
       let tmp_url = app.globalData.entry_url;
       app.globalData.entry_url = null;
       console.log("获取输入url: ", tmp_url);
-      wx.redirectTo({
+      wx.switchTab({
         url: '/pages/index/container?url=' + encodeURIComponent(tmp_url),
       })
     } else {
       console.log("使用默认主页", app.globalData.DEFAULT_HOME_URL);
-      wx.redirectTo({
+      wx.switchTab({
         url: '/pages/index/container?url=' + encodeURIComponent(app.globalData.DEFAULT_HOME_URL)
       })
     }

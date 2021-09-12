@@ -35,6 +35,12 @@
           "pathName": "pages/index/redirect",
           "query": "outURL=https%3A%2F%2Fmirrors.sustech.edu.cn%2Fsite%2Fsustech-online%2Fdocuments%2Ffreshman-handbook%2F2021.pdf&handleFile=true&ext=pdf",
           "scene": null
+        },
+        {
+          "name": "巴士tab",
+          "pathName": "pages/bus/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

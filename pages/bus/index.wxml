@@ -1,0 +1,3 @@
+<view class="intro">接口</view>
+
+<web-view src="https://perf.sustech.online/transport/bustimer-wx.html"></web-view>
