@@ -38,7 +38,7 @@
     "showES6CompileOption": false
   },
   "compileType": "miniprogram",
-  "libVersion": "2.13.1",
+  "libVersion": "2.19.4",
   "appid": "wx1aed852b6f3f64db",
   "projectname": "sustech-online",
   "debugOptions": {
@@ -47,5 +47,6 @@
   "scripts": {},
   "isGameTourist": false,
   "simulatorType": "wechat",
-  "simulatorPluginLibVersion": {}
+  "simulatorPluginLibVersion": {},
+  "condition": {}
 }
