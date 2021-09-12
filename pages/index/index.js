@@ -21,18 +21,21 @@ Page({
     // wx.navigateTo({
     //   url: '/pages/index/redirect?outURL='+tmp_url,
     // })
-    if (app.globalData.entry_url) {
-      let tmp_url = app.globalData.entry_url;
-      app.globalData.entry_url = null;
-      console.log("获取输入url: ", tmp_url);
-      wx.switchTab({
-        url: '/pages/index/container?url=' + encodeURIComponent(tmp_url),
-      })
-    } else {
-      console.log("使用默认主页", app.globalData.DEFAULT_HOME_URL);
-      wx.switchTab({
-        url: '/pages/index/container?url=' + encodeURIComponent(app.globalData.DEFAULT_HOME_URL)
-      })
-    }
+    // if (app.globalData.entry_url) {
+    //   let tmp_url = app.globalData.entry_url;
+    //   app.globalData.entry_url = null;
+    //   console.log("获取输入url: ", tmp_url);
+    //   wx.switchTab({
+    //     url: '/pages/index/container?url=' + encodeURIComponent(tmp_url),
+    //   })
+    // } else {
+    //   console.log("使用默认主页", app.globalData.DEFAULT_HOME_URL);
+    //   wx.switchTab({
+    //     url: '/pages/index/container?url=' + encodeURIComponent(app.globalData.DEFAULT_HOME_URL)
+    //   })
+    // }
+    wx.switchTab({
+      url: '/pages/index/container'
+    })
   }
 })

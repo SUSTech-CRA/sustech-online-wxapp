@@ -2,17 +2,18 @@
 //获取应用实例
 const app = getApp()
 
-Component({
-  pageLifetimes: {
-    show() {
-      if (typeof this.getTabBar === 'function' &&
-        this.getTabBar()) {
-        this.getTabBar().setData({
-          selected: 0
-        })
-      }
-    }
-  },
+Page({
+  // pageLifetimes: {
+  //   show() {
+  //     console.log(this.getTabBar());
+  //     if (typeof this.getTabBar === 'function' &&
+  //       this.getTabBar()) {
+  //       this.getTabBar().setData({
+  //         selected: 0
+  //       })
+  //     }
+  //   }
+  // },
   /**
    * 页面的初始数据
    */
@@ -29,13 +30,23 @@ Component({
       url: '../logs/logs'
     })
   },
+  onShow: function () {
+    if (typeof this.getTabBar === 'function' &&
+      this.getTabBar()) {
+      this.getTabBar().setData({
+        selected: 0
+      })
+    }
+  },
   onLoad: function (query) {
     // wx.showModal({
     //   title: "container " + JSON.stringify(query),
     // })
-    if (query.url) {
+    let tmp_url = app.globalData.entry_url;
+    app.globalData.entry_url = null;
+    console.log("获取 app.globalData.entry_url: ", tmp_url);
+    if (tmp_url) {
       // console.log("onload")
-      let tmp_url = decodeURIComponent(query.url);
       console.log("container url: ", tmp_url)
       this.setData({
         url: tmp_url
