@@ -3,17 +3,6 @@
 const app = getApp()
 
 Page({
-  // pageLifetimes: {
-  //   show() {
-  //     console.log(this.getTabBar());
-  //     if (typeof this.getTabBar === 'function' &&
-  //       this.getTabBar()) {
-  //       this.getTabBar().setData({
-  //         selected: 0
-  //       })
-  //     }
-  //   }
-  // },
   /**
    * 页面的初始数据
    */
