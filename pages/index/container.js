@@ -37,6 +37,18 @@ Page({
         selected: 0
       })
     }
+    setTimeout(this.GoBackHome, 5000);
+  },
+  GoBackHome() {
+    wx.navigateTo({
+      url: '/pages/index/alias/go_home',
+    })
+    if (app.globalData.goHome) {
+      this.setData({
+        url: "https://sustech.online/"
+      })
+    }
+    console.log("测试");
   },
   onLoad: function (query) {
     // wx.showModal({
