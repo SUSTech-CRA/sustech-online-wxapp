@@ -38,7 +38,7 @@
     "showES6CompileOption": false
   },
   "compileType": "miniprogram",
-  "libVersion": "2.19.4",
+  "libVersion": "2.20.0",
   "appid": "wx1aed852b6f3f64db",
   "projectname": "sustech-online",
   "debugOptions": {
