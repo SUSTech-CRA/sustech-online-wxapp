@@ -8,7 +8,7 @@ Online manual for SUSTecher.
 
 **截图**
 
-<img src="Screenshot.jpg" width="400px" />
+<img src="Screenshot.png" width="400px" />
 
 ## 帮助我们完善
 
