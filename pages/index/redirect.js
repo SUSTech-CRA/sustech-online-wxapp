@@ -46,7 +46,8 @@ Page({
     console.log(options);
     let the_url = decodeURIComponent(options.outURL);
     let handleFile = options.handleFile;
-    if (handleFile === 'true') {
+    let inwhitelist = options.inwhitelist;
+    if (handleFile === 'true' && inwhitelist === 'true') {
       let file_ext = options.ext;
       this.set_style(true, false);
       // 下载监听进度
@@ -107,7 +108,7 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () { },
+  onShow: function () {},
 
   /**
    * 生命周期函数--监听页面隐藏
