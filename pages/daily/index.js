@@ -67,7 +67,7 @@ Page({
    */
   onShareAppMessage: function () {
     return {
-      title: "校园巴士时刻表"
+      title: "南科手册-快讯"
     }
   }
 })
