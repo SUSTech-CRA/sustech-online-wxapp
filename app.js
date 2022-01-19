@@ -50,6 +50,7 @@ App({
   globalData: {
     userInfo: null,
     entry_url: null,
-    DEFAULT_HOME_URL: "https://sustech.online/?utm_source=wx&utm_medium=miniapp"
+    DEFAULT_ONLINE_URL: "https://sustech.online/?utm_source=wx&utm_medium=miniapp",
+    DEFAULT_DAILY_URL: "https://daily.sustech.online/?utm_source=wx&utm_medium=miniapp",
   }
 })
