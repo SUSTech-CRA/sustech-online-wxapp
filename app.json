@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/index/container",
     "pages/index/redirect",
-    "pages/bus/index"
+    "pages/bus/index",
+    "pages/daily/index"
   ],
   "tabBar": {
     "custom": false,
@@ -12,6 +13,12 @@
     "borderStyle": "black",
     "backgroundColor": "@navBackgroundColor",
     "list": [
+      {
+        "pagePath": "pages/daily/index",
+        "iconPath": "@iconPathHashtag",
+        "selectedIconPath": "image/icon_hashtag_HL.png",
+        "text": "快讯"
+      },
       {
         "pagePath": "pages/index/container",
         "iconPath": "@iconPathHome",
