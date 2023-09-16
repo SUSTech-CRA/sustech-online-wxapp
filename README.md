@@ -4,11 +4,11 @@ Online manual for SUSTecher.
 
 **微信小程序二维码**
 
-![qrcode](./qr-code.jpg)
+![qrcode](doc/qr-code.jpg)
 
 **截图**
 
-<img src="Screenshot.png" width="400px" />
+<img src="doc/Screenshot.png" width="400px" />
 
 ## 帮助我们完善
 

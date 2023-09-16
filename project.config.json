@@ -1,7 +1,13 @@
 {
   "description": "项目配置文件",
   "packOptions": {
-    "ignore": []
+    "ignore": [
+      {
+        "value": "doc",
+        "type": "folder"
+      }
+    ],
+    "include": []
   },
   "setting": {
     "urlCheck": false,
@@ -44,12 +50,11 @@
   "libVersion": "2.21.3",
   "appid": "wx1aed852b6f3f64db",
   "projectname": "sustech-online",
-  "debugOptions": {
-    "hidedInDevtools": []
-  },
-  "scripts": {},
-  "isGameTourist": false,
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
-  "condition": {}
+  "condition": {},
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  }
 }
