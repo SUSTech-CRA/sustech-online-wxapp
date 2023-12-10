@@ -14,12 +14,6 @@
     "backgroundColor": "@navBackgroundColor",
     "list": [
       {
-        "pagePath": "pages/daily/index",
-        "iconPath": "@iconPathHashtag",
-        "selectedIconPath": "image/icon_hashtag_HL.png",
-        "text": "快讯"
-      },
-      {
         "pagePath": "pages/index/container",
         "iconPath": "@iconPathHome",
         "selectedIconPath": "image/icon_home_HL.png",
