@@ -23,13 +23,13 @@ Page({
     if (typeof this.getTabBar === 'function' &&
       this.getTabBar()) {
       this.getTabBar().setData({
-        selected: 0
+        selected: 1
       })
     }
   },
-  onLoad: function (query) {
+  onLoad: function (options) {
     // wx.showModal({
-    //   title: "container " + JSON.stringify(query),
+    //   title: "container " + JSON.stringify(options),
     // })
     let tmp_url = app.globalData.entry_url;
     app.globalData.entry_url = null;

@@ -13,22 +13,8 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (query) {
-    let tmp_url = app.globalData.entry_url;
-    app.globalData.entry_url = null;
-    console.log("获取 app.globalData.entry_url: ", tmp_url);
-    if (tmp_url) {
-      // console.log("onload")
-      console.log("container url: ", tmp_url)
-      this.setData({
-        url: tmp_url
-      })
-    } else {
-      console.log("container url（缺省）: ", app.globalData.DEFAULT_BUS_URL)
-      this.setData({
-        url: app.globalData.DEFAULT_BUS_URL
-      })
-    }
+  onLoad: function (options) {
+
   },
 
   /**
@@ -81,32 +67,10 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage(options) {
-    let shareTitle = this.data.shareTitle;
-    let shareURL = this.data.shareURL;
-    let args = encodeURIComponent('?utm_source=wx&utm_medium=share_card');
-    if (options.webViewUrl) {
-      var encode_url = "url=" + encodeURIComponent(options.webViewUrl) + args
-    } else {
-      var encode_url = "url=" + encodeURIComponent(shareURL) + args
-    }
-    console.log("分享链接: ", encode_url);
+  onShareAppMessage() {
     return {
-      title: shareTitle,
-      path: "pages/bus/index?" + encode_url,
+      title: "校园巴士时刻表 SUSTech Campus Bus Info"
     }
   },
 
-  /**
-   * 绑定心跳函数，获取标题、URL信息
-   */
-  getMSG(e) {
-    let last_item = e.detail.data.pop()
-    if (last_item.msgType == "heartbeat") {
-      this.setData({
-        shareTitle: last_item.shareTitle,
-        shareURL: last_item.shareURL
-      });
-    }
-  }
 })
