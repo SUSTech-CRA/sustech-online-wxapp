@@ -13,7 +13,7 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (query) {
+  onLoad: function (options) {
     // wx.showModal({
     //   title: "container " + JSON.stringify(query),
     // })

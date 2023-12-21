@@ -1,11 +1,13 @@
 // pages/bus/index.js
+const app = getApp()
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    url: app.globalData.DEFAULT_BUS_URL
   },
 
   /**
@@ -26,13 +28,13 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-      if (typeof this.getTabBar === 'function' &&
-        this.getTabBar()) {
-        this.getTabBar().setData({
-          selected: 1
-        })
-      }
-    },
+    if (typeof this.getTabBar === 'function' &&
+      this.getTabBar()) {
+      this.getTabBar().setData({
+        selected: 1
+      })
+    }
+  },
 
   /**
    * 生命周期函数--监听页面隐藏
@@ -65,9 +67,10 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
+  onShareAppMessage() {
     return {
-      title: "校园巴士时刻表"
+      title: "校园巴士时刻表 SUSTech Campus Bus Info"
     }
-  }
+  },
+
 })
