@@ -7,7 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    url: app.globalData.DEFAULT_DAILY_URL
+    url: app.globalData.DEFAULT_CANTEEN_URL
   },
 
   /**
@@ -27,9 +27,9 @@ Page({
         url: tmp_url
       })
     } else {
-      console.log("container url（缺省）: ", app.globalData.DEFAULT_DAILY_URL)
+      console.log("container url（缺省）: ", app.globalData.DEFAULT_CANTEEN_URL)
       this.setData({
-        url: app.globalData.DEFAULT_DAILY_URL
+        url: app.globalData.DEFAULT_CANTEEN_URL
       })
     }
   },
