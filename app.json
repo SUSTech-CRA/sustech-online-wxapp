@@ -4,7 +4,7 @@
     "pages/index/container",
     "pages/index/redirect",
     "pages/bus/index",
-    "pages/daily/index"
+    "pages/canteen/index"
   ],
   "tabBar": {
     "custom": false,
@@ -14,9 +14,9 @@
     "backgroundColor": "@navBackgroundColor",
     "list": [
       {
-        "pagePath": "pages/daily/index",
-        "iconPath": "@iconPathHashtag",
-        "selectedIconPath": "image/icon_hashtag_HL.png",
+        "pagePath": "pages/canteen/index",
+        "iconPath": "@iconPathCanteen",
+        "selectedIconPath": "image/icon_canteen_HL.png",
         "text": "饭堂"
       },
       {
