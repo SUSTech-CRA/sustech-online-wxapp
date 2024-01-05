@@ -1,4 +1,4 @@
-/* pages/daily/index.wxss */
+/* pages/canteen/index.wxss */
 .intro {
   margin: 30px;
   text-align: center;

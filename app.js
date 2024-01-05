@@ -53,6 +53,6 @@ App({
     DEFAULT_ONLINE_URL: "https://sustech.online/index-wx.html?utm_source=wx&utm_medium=miniapp",
     DEFAULT_DAILY_URL: "https://daily.sustech.online/?utm_source=wx&utm_medium=miniapp",
     DEFAULT_BUS_URL: "https://sustech.online/transport/bustimer-wx.html?utm_source=wx&utm_medium=miniapp",
-    DEFAULT_CANTEEN_URL: "https://sustech.online/canteen/?utm_source=wx&utm_medium=miniapp"
+    DEFAULT_CANTEEN_URL: "https://sustech.online/canteen/canteen-wx.html?utm_source=wx&utm_medium=miniapp"
   }
 })
