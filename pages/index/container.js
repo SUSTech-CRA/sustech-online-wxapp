@@ -26,6 +26,7 @@ Page({
         selected: 1
       })
     }
+    app.changeTabBarItem()
   },
   onLoad: function (options) {
     // wx.showModal({

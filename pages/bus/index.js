@@ -34,6 +34,7 @@ Page({
         selected: 1
       })
     }
+    app.changeTabBarItem()
   },
 
   /**
