@@ -8,9 +8,6 @@ Page({
    */
   data: {
     motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
     url: app.globalData.DEFAULT_ONLINE_URL
   },
   //事件处理函数
