@@ -27,9 +27,7 @@ Page({
     if (Math.abs(bytes) < thresh) {
       return bytes + ' B';
     }
-    const units = si ?
-      ['kB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'] :
-      ['KiB', 'MiB', 'GiB', 'TiB', 'PiB', 'EiB', 'ZiB', 'YiB'];
+    const units = si ? ['kB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'] : ['KiB', 'MiB', 'GiB', 'TiB', 'PiB', 'EiB', 'ZiB', 'YiB'];
     let u = -1;
     const r = 10 ** dp;
     do {
@@ -149,9 +147,13 @@ Page({
     })
   },
   copyCallback(e) {
+    console.log(this.data.to_paste_url)
     wx.setClipboardData({
       data: this.data.to_paste_url,
-    });
+      fail(res) {
+        console.log("剪贴板调用失败", res)
+      }
+    })
     wx.navigateBack({
       delta: 1,
     });
