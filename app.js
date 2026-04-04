@@ -43,16 +43,14 @@ App({
         if (lang === 'zh') {
           console.log("use chinese as default")
           this.setTabBarItems([
-            { index: 0, text: '饭堂' },
-            { index: 1, text: '手册' },
-            { index: 2, text: '巴士' }
+            { index: 0, text: '手册' },
+            { index: 1, text: '巴士' }
           ])
         } else {
           console.log("use english as default")
           this.setTabBarItems([
-            { index: 0, text: 'Canteen' },
-            { index: 1, text: 'Home' },
-            { index: 2, text: 'Bus' }
+            { index: 0, text: 'Home' },
+            { index: 1, text: 'Bus' }
           ])
         }
       }

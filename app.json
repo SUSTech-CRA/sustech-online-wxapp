@@ -3,8 +3,7 @@
     "pages/index/index",
     "pages/index/container",
     "pages/index/redirect",
-    "pages/bus/index",
-    "pages/canteen/index"
+    "pages/bus/index"
   ],
   "tabBar": {
     "custom": false,
@@ -13,12 +12,6 @@
     "borderStyle": "black",
     "backgroundColor": "@navBackgroundColor",
     "list": [
-      {
-        "pagePath": "pages/canteen/index",
-        "iconPath": "@iconPathCanteen",
-        "selectedIconPath": "image/icon_canteen_HL.png",
-        "text": "饭堂"
-      },
       {
         "pagePath": "pages/index/container",
         "iconPath": "@iconPathHome",
