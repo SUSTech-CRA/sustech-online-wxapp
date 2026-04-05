@@ -7,7 +7,7 @@ App({
 
     wx.login({
       success: res => {
-        // Send res.code to backend for openId/sessionKey/unionId if needed.
+        // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
     })
   },
@@ -61,10 +61,10 @@ App({
         index: item.index,
         text: item.text,
         success: function (res) {
-          console.log('Set TabBar item succeeded', res)
+          console.log('设置TabBar成功', res)
         },
         fail: function (res) {
-          console.log('Set TabBar item failed', res)
+          console.log('设置TabBar失败', res)
         }
       })
     })
