@@ -16,7 +16,7 @@
 
   <view wx:if="{{style_copy}}">
     <view class="tbody">
-      <text>因为小程序规定不能打开外部链接，所以请将链接复制并粘贴到浏览器中打开。</text>
+      <text>如需浏览，请将网址复制后使用浏览器访问</text>
     </view>
     <view class="turl">
       <text>{{to_paste_url}}</text>
