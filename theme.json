@@ -5,7 +5,6 @@
     "fontColor": "#181818",
     "iconPathHome": "image/icon_home_light.png",
     "iconPathBus": "image/icon_bus_light.png",
-    "iconPathCanteen": "image/icon_canteen_light.png",
     "iconPathTalk": "image/icon_hashtag_light.png"
   },
   "dark": {
@@ -14,7 +13,6 @@
     "fontColor": "#c5c5c5",
     "iconPathHome": "image/icon_home_dark.png",
     "iconPathBus": "image/icon_bus_dark.png",
-    "iconPathCanteen": "image/icon_canteen_dark.png",
     "iconPathTalk": "image/icon_hashtag_dark.png"
   }
 }

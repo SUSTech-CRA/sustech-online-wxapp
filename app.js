@@ -1,4 +1,4 @@
-//app.js
+// app.js
 App({
   onLaunch: function () {
     var logs = wx.getStorageSync('logs') || []
@@ -28,7 +28,6 @@ App({
     DEFAULT_ONLINE_URL: "https://sustech.online/index-wx.html?utm_source=wx&utm_medium=miniapp",
     DEFAULT_DAILY_URL: "https://daily.sustech.online/?utm_source=wx&utm_medium=miniapp",
     DEFAULT_BUS_URL: "https://sustech.online/transport/bustimer-wx.html?utm_source=wx&utm_medium=miniapp",
-    DEFAULT_CANTEEN_URL: "https://sustech.online/canteen/canteen-wx.html?utm_source=wx&utm_medium=miniapp",
     DEFAULT_TALK_URL: "https://sustech.online/talk-wx.html?utm_source=wx&utm_medium=miniapp"
   },
 
@@ -40,18 +39,16 @@ App({
         if (lang === 'zh') {
           console.log("use chinese as default")
           this.setTabBarItems([
-            { index: 0, text: '饭堂' },
-            { index: 1, text: '手册' },
-            { index: 2, text: '巴士' },
-            { index: 3, text: '讲座' }
+            { index: 0, text: '手册' },
+            { index: 1, text: '巴士' },
+            { index: 2, text: '讲座' }
           ])
         } else {
           console.log("use english as default")
           this.setTabBarItems([
-            { index: 0, text: 'Canteen' },
-            { index: 1, text: 'Home' },
-            { index: 2, text: 'Bus' },
-            { index: 3, text: 'Talks' }
+            { index: 0, text: 'Home' },
+            { index: 1, text: 'Bus' },
+            { index: 2, text: 'Talks' }
           ])
         }
       }
