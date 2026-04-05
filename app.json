@@ -28,7 +28,7 @@
       {
         "pagePath": "pages/talk/index",
         "iconPath": "@iconPathTalk",
-        "selectedIconPath": "image/icon_hashtag_HL.png",
+        "selectedIconPath": "image/icon_course_HL.png",
         "text": "讲座"
       }
     ]
