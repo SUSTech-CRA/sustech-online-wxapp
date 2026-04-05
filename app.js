@@ -1,10 +1,12 @@
 // app.js
 App({
   onLaunch: function () {
+    // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
 
+    // 登录
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
@@ -13,9 +15,11 @@ App({
   },
 
   onShow: function (options) {
+    // 普通二维码扫描
     if (options.query.q) {
       this.globalData.entry_url = decodeURIComponent(options.query.q)
     } else if (options.query.url) {
+      // 参数跳转：包括分享卡片
       this.globalData.entry_url = decodeURIComponent(options.query.url)
     } else {
       this.globalData.entry_url = null
