@@ -4,7 +4,8 @@
     "pages/index/container",
     "pages/index/redirect",
     "pages/bus/index",
-    "pages/canteen/index"
+    "pages/canteen/index",
+    "pages/talk/index"
   ],
   "tabBar": {
     "custom": false,
@@ -30,6 +31,12 @@
         "iconPath": "@iconPathBus",
         "selectedIconPath": "image/icon_bus_HL.png",
         "text": "巴士"
+      },
+      {
+        "pagePath": "pages/talk/index",
+        "iconPath": "@iconPathTalk",
+        "selectedIconPath": "image/icon_hashtag_HL.png",
+        "text": "讲座"
       }
     ]
   },

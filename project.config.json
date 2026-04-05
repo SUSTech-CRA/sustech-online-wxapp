@@ -44,10 +44,15 @@
     "minifyWXML": true,
     "showES6CompileOption": false,
     "useCompilerPlugins": false,
-    "ignoreUploadUnusedFiles": false
+    "ignoreUploadUnusedFiles": false,
+    "compileWorklet": false,
+    "localPlugins": false,
+    "condition": false,
+    "swc": false,
+    "disableSWC": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.21.3",
+  "libVersion": "3.3.4",
   "appid": "wx1aed852b6f3f64db",
   "projectname": "sustech-online",
   "simulatorType": "wechat",
